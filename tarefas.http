@@ -1,0 +1,31 @@
+POST http://localhost:8080/tarefas
+Content-Type: application/json
+
+{
+  "titulo": "Teste2",
+  "concluida": true
+}
+### Listar todas
+GET http://localhost:8080/tarefas
+
+### Buscar por ID
+GET http://localhost:8080/tarefas/9999
+
+###
+PUT http://localhost:8080/tarefas/1
+Content-Type: application/json
+
+{
+  "titulo": "Estudar Spring Boot",
+  "concluida": true
+}
+###
+DELETE http://localhost:8080/tarefas/5
+###
+POST http://localhost:8080/tarefas
+Content-Type: application/json
+
+{
+  "titulo": "",
+  "concluida": false
+}
